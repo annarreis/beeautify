@@ -1,0 +1,977 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Beeautify · Clínica de Estética Avançada · São Caetano do Sul</title>
+<meta name="description" content="Estética facial, corporal e odontológica com tecnologia de ponta e protocolos exclusivos. Resultados naturais. São Caetano do Sul." />
+<meta name="theme-color" content="#291a10" />
+<meta name="author" content="Beeautify Clínica" />
+<link rel="canonical" href="https://beeautify.com.br/" />
+
+<!-- Favicon (inline SVG bee) -->
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cg stroke='%236b4226' stroke-width='3' fill='none' stroke-linecap='round' stroke-linejoin='round'%3E%3Cellipse cx='32' cy='40' rx='11' ry='15'/%3E%3Cpath d='M32 28v27M24 33h16M23 41h18'/%3E%3Ccircle cx='32' cy='22' r='5'/%3E%3Cpath d='M30 32C18 20 8 24 10 32c2 7 14 9 21 4M34 32C46 20 56 24 54 32c-2 7-14 9-21 4'/%3E%3C/g%3E%3C/svg%3E" />
+
+<!-- Open Graph / Social -->
+<meta property="og:type" content="website" />
+<meta property="og:locale" content="pt_BR" />
+<meta property="og:site_name" content="Beeautify Clínica" />
+<meta property="og:title" content="Beeautify · Clínica de Estética Avançada · São Caetano do Sul" />
+<meta property="og:description" content="Estética facial, corporal e odontológica com tecnologia de ponta e protocolos exclusivos. Resultados naturais." />
+<meta property="og:url" content="https://beeautify.com.br/" />
+<meta property="og:image" content="https://beeautify.com.br/logo.png" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta name="twitter:title" content="Beeautify · Clínica de Estética Avançada" />
+<meta name="twitter:description" content="Estética que realça a sua naturalidade. São Caetano do Sul · SP." />
+
+<!-- Structured data: LocalBusiness (SEO local) -->
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "BeautySalon",
+  "name": "Beeautify Clínica",
+  "description": "Clínica de estética avançada — estética facial, corporal e odontológica com tecnologia de ponta e protocolos exclusivos.",
+  "url": "https://beeautify.com.br/",
+  "image": "https://beeautify.com.br/og.jpg",
+  "priceRange": "$$$",
+  "areaServed": "São Caetano do Sul e Grande ABC",
+  "address": {
+    "@type": "PostalAddress",
+    "addressLocality": "São Caetano do Sul",
+    "addressRegion": "SP",
+    "addressCountry": "BR"
+  },
+  "sameAs": ["https://instagram.com/beeautify"]
+}
+</script>
+
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,300;1,9..144,400;1,9..144,500&family=Mulish:wght@300;400;500;600;700&family=Pinyon+Script&display=swap" rel="stylesheet" />
+<style>
+  :root{
+    --ink:#20140c;
+    --espresso:#291a10;
+    --espresso-2:#3a2516;
+    --cocoa:#6b4226;
+    --honey:#c68a3a;
+    --honey-bright:#e2b76e;
+    --honey-deep:#a06622;
+    --champagne:#f7f1e7;
+    --champagne-2:#fbf7ef;
+    --blush:#efe2d2;
+    --ivory:#f3e8d7;
+    --muted-dark:#cbb89d;
+    --line:rgba(40,26,16,.12);
+    --line-strong:rgba(40,26,16,.22);
+    --line-gold:rgba(198,138,58,.4);
+    --shadow:0 30px 60px -28px rgba(40,26,16,.35);
+    --display:"Fraunces",Georgia,serif;
+    --script:"Pinyon Script","Snell Roundhand","Apple Chancery",cursive;
+    --body:"Mulish",-apple-system,system-ui,sans-serif;
+  }
+
+  *{box-sizing:border-box;margin:0;padding:0}
+  html{scroll-behavior:smooth}
+  body{
+    font-family:var(--body);
+    color:var(--ink);
+    background:var(--champagne);
+    line-height:1.65;
+    -webkit-font-smoothing:antialiased;
+    overflow-x:hidden;
+  }
+  a{color:inherit;text-decoration:none}
+  img{max-width:100%;display:block}
+
+  .wrap{width:min(1180px,92vw);margin-inline:auto}
+  .section{padding:clamp(4.5rem,9vw,8rem) 0}
+  .eyebrow{
+    font-family:var(--body);
+    font-weight:600;
+    font-size:.74rem;
+    letter-spacing:.34em;
+    text-transform:uppercase;
+    color:var(--honey-deep);
+    display:inline-flex;
+    align-items:center;
+    gap:.7rem;
+  }
+  .eyebrow::before{content:"";width:34px;height:1px;background:var(--honey)}
+  .eyebrow--center{justify-content:center}
+  .eyebrow--center::after{content:"";width:34px;height:1px;background:var(--honey)}
+
+  h1,h2,h3{font-family:var(--display);font-weight:400;line-height:1.05;letter-spacing:-.01em}
+  h2{font-size:clamp(2.1rem,4.6vw,3.5rem)}
+  .lead{font-size:clamp(1.05rem,1.6vw,1.22rem);color:#52402f;max-width:60ch}
+  em{font-style:italic;color:var(--cocoa)}
+
+  /* ---------- BUTTONS ---------- */
+  .btn{
+    display:inline-flex;align-items:center;gap:.6rem;
+    font-family:var(--body);font-weight:600;font-size:.95rem;letter-spacing:.01em;
+    padding:1.05rem 1.9rem;border-radius:100px;cursor:pointer;border:1px solid transparent;
+    transition:transform .35s cubic-bezier(.2,.8,.2,1),box-shadow .35s,background .3s,color .3s;
+    position:relative;
+  }
+  .btn svg{width:17px;height:17px}
+  .btn--primary{background:var(--ink);color:var(--ivory);box-shadow:0 14px 30px -14px rgba(32,20,12,.7)}
+  .btn--primary:hover{transform:translateY(-3px);box-shadow:0 22px 40px -16px rgba(32,20,12,.75)}
+  .btn--gold{background:linear-gradient(135deg,var(--honey-bright),var(--honey));color:var(--ink);box-shadow:0 16px 34px -14px rgba(198,138,58,.7)}
+  .btn--gold:hover{transform:translateY(-3px);box-shadow:0 24px 46px -16px rgba(198,138,58,.8)}
+  .btn--ghost{background:transparent;color:var(--ink);border-color:var(--line-strong)}
+  .btn--ghost:hover{border-color:var(--cocoa);transform:translateY(-3px)}
+  .btn--ghost-light{background:transparent;color:var(--ivory);border-color:rgba(226,183,110,.5)}
+  .btn--ghost-light:hover{border-color:var(--honey-bright);background:rgba(226,183,110,.08);transform:translateY(-3px)}
+
+  /* ---------- HEADER ---------- */
+  .site-header{
+    position:fixed;top:0;left:0;right:0;z-index:60;
+    transition:background .4s,box-shadow .4s,padding .4s,border-color .4s;
+    padding:1.4rem 0;border-bottom:1px solid transparent;
+  }
+  .site-header.scrolled{
+    background:rgba(247,241,231,.86);backdrop-filter:blur(14px);
+    border-bottom:1px solid var(--line);padding:.85rem 0;box-shadow:0 8px 30px -22px rgba(40,26,16,.5);
+  }
+  .nav{display:flex;align-items:center;justify-content:space-between;gap:1.5rem}
+  .brand{display:flex;align-items:center;gap:.7rem}
+  .brand .bee{width:34px;height:34px;color:var(--cocoa);flex:none}
+  .brand-text{line-height:1}
+  .brand-name{font-family:var(--script);font-size:2rem;color:var(--cocoa);display:block;margin-bottom:-4px}
+  .brand-sub{font-size:.6rem;letter-spacing:.42em;text-transform:uppercase;color:var(--honey-deep);font-weight:600;padding-left:3px}
+  .nav-links{display:flex;align-items:center;gap:2.1rem;list-style:none}
+  .nav-links a{font-size:.9rem;font-weight:500;color:#3d2c1e;position:relative;padding:.2rem 0}
+  .nav-links a::after{content:"";position:absolute;left:0;bottom:-2px;width:0;height:1px;background:var(--honey);transition:width .3s}
+  .nav-links a:hover::after{width:100%}
+  .nav-cta{display:flex;align-items:center;gap:1rem}
+  .nav-cta .btn{padding:.7rem 1.4rem;font-size:.85rem}
+  .menu-toggle{display:none;background:none;border:none;cursor:pointer;flex-direction:column;gap:5px;padding:6px}
+  .menu-toggle span{width:24px;height:2px;background:var(--cocoa);transition:.3s;border-radius:2px}
+
+  /* ---------- HERO ---------- */
+  .hero{position:relative;padding-top:clamp(9rem,16vh,12rem);padding-bottom:clamp(4rem,8vw,7rem);overflow:hidden}
+  .hero-glow{
+    position:absolute;inset:0;z-index:0;pointer-events:none;
+    background:
+      radial-gradient(60% 55% at 78% 30%,rgba(226,183,110,.4),transparent 60%),
+      radial-gradient(50% 50% at 12% 88%,rgba(239,226,210,.7),transparent 70%);
+  }
+  .hero-honeycomb{position:absolute;top:-6%;right:-8%;width:min(640px,70vw);z-index:0;opacity:.5;color:var(--honey);pointer-events:none}
+  .hero-grid{position:relative;z-index:2;display:grid;grid-template-columns:1.1fr .9fr;gap:clamp(2rem,5vw,4rem);align-items:center}
+  .hero h1{font-size:clamp(2.6rem,6.2vw,5.2rem);font-weight:300;margin:1.6rem 0}
+  .hero h1 .script{font-family:var(--script);font-weight:400;color:var(--honey-deep);font-size:1.25em;line-height:.7}
+  .hero .lead{margin-bottom:2.2rem}
+  .hero-actions{display:flex;flex-wrap:wrap;gap:1rem;align-items:center}
+  .trust{margin-top:2.4rem;display:flex;align-items:center;gap:1.4rem;flex-wrap:wrap;font-size:.84rem;color:#5b4733}
+  .trust .dot{width:4px;height:4px;border-radius:50%;background:var(--honey)}
+  .trust strong{color:var(--cocoa);font-weight:700}
+
+  /* hero visual card */
+  .hero-visual{position:relative}
+  .hero-card{
+    position:relative;border-radius:24px;overflow:hidden;aspect-ratio:4/5;
+    background:linear-gradient(160deg,#f5e9d6,#e7d2b6 55%,#caa674);
+    box-shadow:var(--shadow);border:1px solid rgba(255,255,255,.5);
+    display:flex;align-items:flex-end;
+  }
+  .hero-card .bee-big{position:absolute;top:8%;left:50%;transform:translateX(-50%);width:46%;color:rgba(67,42,24,.9)}
+  .hero-card-label{position:relative;z-index:2;padding:1.6rem;color:#3a2516}
+  .hero-card-label .ph{font-family:var(--display);font-style:italic;font-size:1.25rem;line-height:1.2}
+  .hero-card-label small{font-size:.7rem;letter-spacing:.2em;text-transform:uppercase;color:rgba(58,37,22,.65);font-weight:600}
+  .hero-card-sheen{position:absolute;inset:0;background:linear-gradient(115deg,transparent 40%,rgba(255,255,255,.35) 50%,transparent 60%)}
+  .badge-float{
+    position:absolute;left:-22px;bottom:18%;z-index:3;
+    background:var(--champagne-2);border:1px solid var(--line);border-radius:16px;
+    padding:.85rem 1.1rem;box-shadow:var(--shadow);display:flex;align-items:center;gap:.7rem;
+  }
+  .badge-float .hx{width:38px;height:38px;color:var(--honey);flex:none}
+  .badge-float b{display:block;font-family:var(--display);font-size:1.15rem;color:var(--cocoa)}
+  .badge-float span{font-size:.72rem;color:#6b5640}
+
+  /* ---------- CONNECT (block 1) ---------- */
+  .connect{background:linear-gradient(180deg,var(--champagne),var(--blush));text-align:center}
+  .connect .wrap{max-width:880px}
+  .connect h2{margin:1.4rem 0;font-weight:300}
+  .connect p{font-size:1.1rem;color:#54422f;max-width:62ch;margin-inline:auto}
+  .pullquote{
+    margin:2.6rem auto 0;max-width:46ch;font-family:var(--display);font-style:italic;
+    font-size:clamp(1.3rem,2.4vw,1.7rem);color:var(--cocoa);line-height:1.4;position:relative;
+  }
+  .pullquote::before{content:"";display:block;width:42px;height:1px;background:var(--honey);margin:0 auto 1.4rem}
+
+  /* ---------- AUTHORITY (block 2, dark) ---------- */
+  .authority{position:relative;background:var(--espresso);color:var(--ivory);overflow:hidden}
+  .authority .deco{position:absolute;inset:0;opacity:.5;pointer-events:none;
+    background:radial-gradient(45% 45% at 85% 12%,rgba(198,138,58,.28),transparent 65%),radial-gradient(40% 40% at 8% 95%,rgba(160,102,34,.22),transparent 70%)}
+  .authority .hc{position:absolute;right:-6%;bottom:-12%;width:480px;color:var(--honey);opacity:.16;pointer-events:none}
+  .authority .wrap{position:relative;z-index:2}
+  .authority .eyebrow{color:var(--honey-bright)}
+  .authority .eyebrow::before{background:var(--honey-bright)}
+  .authority h2{color:var(--ivory);font-weight:300;margin:1.4rem 0 1rem;max-width:18ch}
+  .authority .intro{color:var(--muted-dark);max-width:58ch;font-size:1.08rem}
+  .feat-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.4rem;margin-top:3.4rem}
+  .feat{padding:2rem 1.7rem;border:1px solid rgba(226,183,110,.18);border-radius:18px;background:rgba(255,255,255,.025);transition:transform .4s,border-color .4s,background .4s}
+  .feat:hover{transform:translateY(-6px);border-color:rgba(226,183,110,.45);background:rgba(226,183,110,.05)}
+  .hex-ico{position:relative;width:58px;height:58px;display:grid;place-items:center;margin-bottom:1.3rem}
+  .hex-ico svg.hexbg{position:absolute;inset:0;width:100%;height:100%;color:var(--honey)}
+  .hex-ico svg.ic{position:relative;width:24px;height:24px;color:var(--honey-bright)}
+  .feat h3{font-size:1.3rem;color:var(--ivory);margin-bottom:.5rem}
+  .feat p{color:var(--muted-dark);font-size:.95rem}
+
+  /* ---------- SERVICES (block 3) ---------- */
+  .services .head{display:flex;flex-wrap:wrap;align-items:flex-end;justify-content:space-between;gap:1.5rem;margin-bottom:3rem}
+  .services h2{font-weight:300;max-width:14ch}
+  .services .head p{max-width:38ch;color:#5b4733}
+  .svc-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:1.4rem}
+  .svc{
+    position:relative;background:var(--champagne-2);border:1px solid var(--line);border-radius:20px;
+    padding:2.2rem 2rem 2rem;overflow:hidden;transition:transform .4s,box-shadow .4s,border-color .4s;
+  }
+  .svc:hover{transform:translateY(-6px);box-shadow:var(--shadow);border-color:var(--line-gold)}
+  .svc .num{position:absolute;top:1.4rem;right:1.6rem;font-family:var(--display);font-style:italic;font-size:1.4rem;color:rgba(198,138,58,.45)}
+  .svc .hxmark{width:30px;height:30px;color:var(--honey);margin-bottom:1.1rem}
+  .svc h3{font-size:1.55rem;margin-bottom:.7rem}
+  .svc p{color:#5b4733;font-size:.97rem}
+  .svc .tags{margin-top:1.2rem;display:flex;flex-wrap:wrap;gap:.5rem}
+  .svc .tags span{font-size:.72rem;font-weight:600;letter-spacing:.04em;color:var(--cocoa);background:rgba(198,138,58,.12);border:1px solid var(--line-gold);padding:.32rem .7rem;border-radius:100px}
+  .svc-cta{text-align:center;margin-top:3rem}
+
+  /* ---------- PROOF (block 4) ---------- */
+  .proof{background:linear-gradient(180deg,var(--blush),var(--champagne))}
+  .proof .head{text-align:center;max-width:680px;margin:0 auto 3.2rem}
+  .proof h2{font-weight:300;margin:1.2rem 0 .8rem}
+  .proof .head p{color:#5b4733;margin-inline:auto}
+  .ba-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:1.3rem}
+  .ba{border-radius:18px;overflow:hidden;border:1px solid var(--line);box-shadow:0 24px 50px -34px rgba(40,26,16,.4);background:#fff}
+  .ba-imgs{display:grid;grid-template-columns:1fr 1fr;height:230px}
+  .ba-imgs div{position:relative;display:grid;place-items:end start;padding:.8rem}
+  .ba-imgs .b{background:linear-gradient(150deg,#e9d8c1,#d8bd99)}
+  .ba-imgs .a{background:linear-gradient(150deg,#f3e6d2,#e6cda6);border-left:1px solid rgba(255,255,255,.6)}
+  .ba-imgs span{font-size:.64rem;letter-spacing:.22em;text-transform:uppercase;font-weight:700;color:rgba(58,37,22,.7);background:rgba(255,255,255,.7);padding:.2rem .55rem;border-radius:100px}
+  .ba-cap{padding:1rem 1.2rem;font-size:.86rem;color:#6b5640;display:flex;align-items:center;gap:.55rem}
+  .ba-cap .hx{width:18px;height:18px;color:var(--honey);flex:none}
+  .testi{
+    margin-top:3.2rem;background:var(--espresso);color:var(--ivory);border-radius:24px;
+    padding:clamp(2.2rem,4vw,3.4rem);text-align:center;position:relative;overflow:hidden;box-shadow:var(--shadow);
+  }
+  .testi .hc{position:absolute;left:-4%;top:-30%;width:300px;color:var(--honey);opacity:.14}
+  .testi .qmark{font-family:var(--display);font-size:4rem;color:var(--honey);line-height:.4;display:block;margin-bottom:.4rem}
+  .testi blockquote{position:relative;z-index:2;font-family:var(--display);font-style:italic;font-weight:300;font-size:clamp(1.4rem,2.8vw,2rem);max-width:24ch;margin:0 auto 1.2rem;line-height:1.35}
+  .testi cite{position:relative;z-index:2;font-style:normal;font-size:.84rem;letter-spacing:.18em;text-transform:uppercase;color:var(--honey-bright);font-weight:600}
+
+  /* ---------- WHY (block 5) ---------- */
+  .why{position:relative;overflow:hidden}
+  .why-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:clamp(2rem,5vw,4.5rem);align-items:center}
+  .why h2{font-weight:300;margin:1.4rem 0}
+  .why p{color:#54422f;font-size:1.08rem;margin-bottom:1.2rem;max-width:54ch}
+  .why .sig{font-family:var(--script);font-size:2.2rem;color:var(--honey-deep);margin-top:1.6rem;display:flex;align-items:center;gap:.6rem}
+  .why .sig .bee{width:30px;height:30px;color:var(--cocoa)}
+  .why-card{
+    background:var(--champagne-2);border:1px solid var(--line);border-radius:24px;padding:2.4rem;box-shadow:var(--shadow);
+  }
+  .why-list{list-style:none;display:grid;gap:1.3rem}
+  .why-list li{display:flex;gap:1rem;align-items:flex-start}
+  .why-list .hx{width:40px;height:40px;color:var(--honey);flex:none;margin-top:2px}
+  .why-list b{font-family:var(--display);font-size:1.18rem;display:block;margin-bottom:.2rem;color:var(--ink)}
+  .why-list p{font-size:.92rem;color:#6b5640;margin:0;max-width:none}
+
+  /* ---------- FINAL CTA (dark) ---------- */
+  .final{position:relative;background:linear-gradient(160deg,var(--espresso-2),var(--espresso) 60%,var(--ink));color:var(--ivory);overflow:hidden;text-align:center}
+  .final .glow{position:absolute;inset:0;pointer-events:none;background:radial-gradient(55% 60% at 50% 0%,rgba(226,183,110,.3),transparent 65%)}
+  .final .hc{position:absolute;left:50%;top:-30%;transform:translateX(-50%);width:760px;color:var(--honey);opacity:.12;pointer-events:none}
+  .final .wrap{position:relative;z-index:2;max-width:760px}
+  .final .bee{width:48px;height:48px;color:var(--honey-bright);margin:0 auto 1.6rem}
+  .final-logo{width:min(320px,72vw);margin:0 auto 1.8rem;mix-blend-mode:screen}
+  .final h2{font-weight:300;color:var(--ivory);font-size:clamp(2.3rem,5vw,3.8rem);margin-bottom:1.3rem}
+  .final h2 .script{font-family:var(--script);color:var(--honey-bright);font-size:1.15em}
+  .final p{color:var(--muted-dark);font-size:1.12rem;max-width:52ch;margin:0 auto 2.4rem}
+  .final-actions{display:flex;flex-wrap:wrap;gap:1rem;justify-content:center}
+  .final-meta{margin-top:2.6rem;display:flex;gap:1.6rem;justify-content:center;flex-wrap:wrap;font-size:.88rem;color:var(--muted-dark)}
+  .final-meta span{display:inline-flex;align-items:center;gap:.5rem}
+  .final-meta svg{width:16px;height:16px;color:var(--honey-bright)}
+
+  /* ---------- FOOTER ---------- */
+  .site-footer{background:var(--ink);color:var(--muted-dark);padding:3.2rem 0 2.2rem}
+  .foot-top{display:flex;flex-wrap:wrap;justify-content:space-between;gap:2rem;align-items:flex-start;padding-bottom:2rem;border-bottom:1px solid rgba(226,183,110,.14)}
+  .foot-brand .brand-name{color:var(--honey-bright)}
+  .foot-logo{width:200px;margin-left:-10px;mix-blend-mode:screen}
+  .foot-brand p{max-width:34ch;margin-top:.4rem;font-size:.9rem}
+  .foot-cols{display:flex;gap:3.5rem;flex-wrap:wrap}
+  .foot-col h4{font-family:var(--body);font-size:.74rem;letter-spacing:.2em;text-transform:uppercase;color:var(--honey-bright);margin-bottom:1rem;font-weight:700}
+  .foot-col a,.foot-col p{display:block;font-size:.9rem;margin-bottom:.6rem;transition:color .3s}
+  .foot-col a:hover{color:var(--ivory)}
+  .foot-bottom{display:flex;flex-wrap:wrap;justify-content:space-between;gap:1rem;margin-top:1.8rem;font-size:.8rem;color:rgba(203,184,157,.65)}
+
+  /* ---------- REVEAL (driven by GSAP) ---------- */
+  /* Content is visible by default. We only pre-hide reveal items once we've
+     committed to animating (html.gsap-ready), so the page never breaks if the
+     motion libraries fail to load or reduced motion is requested. */
+  .reveal{will-change:opacity,transform}
+  html.gsap-ready .reveal{opacity:0}
+  .hero-card-sheen,.badge-float,.bee-big,.hero-honeycomb,.hero-glow{will-change:transform}
+
+  /* ---------- LENIS smooth scroll ---------- */
+  html.lenis,html.lenis body{height:auto}
+  .lenis.lenis-smooth{scroll-behavior:auto!important}
+  .lenis.lenis-smooth [data-lenis-prevent]{overscroll-behavior:contain}
+  .lenis.lenis-stopped{overflow:hidden}
+  .lenis.lenis-smooth iframe{pointer-events:none}
+
+  :focus-visible{outline:2px solid var(--honey-deep);outline-offset:3px;border-radius:4px}
+
+  /* ---------- SCROLL PROGRESS ---------- */
+  .scroll-progress{
+    position:fixed;top:0;left:0;height:3px;width:100%;z-index:80;
+    transform:scaleX(0);transform-origin:0 50%;
+    background:linear-gradient(90deg,var(--honey-deep),var(--honey-bright));
+    pointer-events:none;
+  }
+
+  /* ---------- FLOATING WHATSAPP ---------- */
+  .wa-float{
+    position:fixed;right:clamp(1rem,3vw,1.8rem);bottom:clamp(1rem,3vw,1.8rem);z-index:70;
+    display:inline-flex;align-items:center;gap:.6rem;
+    background:#25d366;color:#fff;font-family:var(--body);font-weight:600;font-size:.9rem;
+    padding:.85rem 1.2rem;border-radius:100px;
+    box-shadow:0 16px 34px -12px rgba(37,211,102,.6);
+    transform:translateY(120%);opacity:0;transition:transform .5s cubic-bezier(.2,.8,.2,1),opacity .5s,box-shadow .3s;
+  }
+  .wa-float.show{transform:translateY(0);opacity:1}
+  .wa-float:hover{box-shadow:0 22px 44px -12px rgba(37,211,102,.75)}
+  .wa-float svg{width:22px;height:22px;flex:none}
+  .wa-float .wa-label{white-space:nowrap}
+  @media(max-width:520px){.wa-float .wa-label{display:none}.wa-float{padding:.95rem}}
+
+  /* ---------- FAQ ---------- */
+  .faq{background:var(--champagne)}
+  .faq .head{text-align:center;max-width:640px;margin:0 auto 2.8rem}
+  .faq h2{font-weight:300;margin:1.2rem 0 .6rem}
+  .faq .head p{color:#5b4733;margin-inline:auto}
+  .faq-list{max-width:820px;margin-inline:auto;display:grid;gap:1rem}
+  .faq-item{
+    background:var(--champagne-2);border:1px solid var(--line);border-radius:16px;
+    overflow:hidden;transition:border-color .3s,box-shadow .3s;
+  }
+  .faq-item[open]{border-color:var(--line-gold);box-shadow:0 18px 40px -30px rgba(40,26,16,.5)}
+  .faq-item summary{
+    list-style:none;cursor:pointer;display:flex;align-items:center;justify-content:space-between;gap:1rem;
+    padding:1.3rem 1.5rem;font-family:var(--display);font-size:1.12rem;color:var(--ink);
+  }
+  .faq-item summary::-webkit-details-marker{display:none}
+  .faq-item summary .pm{flex:none;width:22px;height:22px;position:relative;transition:transform .3s}
+  .faq-item summary .pm::before,.faq-item summary .pm::after{
+    content:"";position:absolute;top:50%;left:50%;width:13px;height:2px;background:var(--honey-deep);
+    transform:translate(-50%,-50%);border-radius:2px;transition:transform .3s;
+  }
+  .faq-item summary .pm::after{transform:translate(-50%,-50%) rotate(90deg)}
+  .faq-item[open] summary .pm::after{transform:translate(-50%,-50%) rotate(0)}
+  .faq-item .faq-body{padding:0 1.5rem 1.4rem;color:#5b4733;font-size:.97rem;max-width:64ch}
+
+  /* ---------- RESPONSIVE ---------- */
+  @media(max-width:960px){
+    .hero-grid{grid-template-columns:1fr;gap:3rem}
+    .hero-visual{max-width:440px;margin-inline:auto;width:100%}
+    .feat-grid,.ba-grid{grid-template-columns:1fr 1fr}
+    .why-grid{grid-template-columns:1fr;gap:2.5rem}
+    .svc-grid{grid-template-columns:1fr 1fr}
+  }
+  @media(max-width:760px){
+    .nav-links,.nav-cta .btn{display:none}
+    .menu-toggle{display:flex}
+    .mobile-open .nav-links{display:flex;position:absolute;top:100%;left:0;right:0;flex-direction:column;align-items:flex-start;gap:1.3rem;background:var(--champagne-2);padding:1.8rem 6vw;border-bottom:1px solid var(--line);box-shadow:var(--shadow)}
+    .feat-grid,.ba-grid,.svc-grid{grid-template-columns:1fr}
+    .hero h1{font-size:clamp(2.3rem,9vw,3.2rem)}
+    .badge-float{left:auto;right:-6px;top:14px;bottom:auto;padding:.7rem .85rem}
+    .testi blockquote{font-size:1.5rem}
+  }
+
+  @media(prefers-reduced-motion:reduce){
+    *{animation:none!important;transition:none!important;scroll-behavior:auto!important}
+    .reveal{opacity:1!important;transform:none!important}
+  }
+</style>
+<script>
+  /* Decide up-front whether motion runs. We add `gsap-ready` synchronously so
+     reveal items are hidden before first paint (no flash). If the user prefers
+     reduced motion, or if GSAP never loads, we strip the class again so all
+     content is simply shown. */
+  (function(){
+    var reduce = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
+    if(!reduce){ document.documentElement.classList.add('gsap-ready'); }
+    function failsafe(){
+      if(typeof window.gsap === 'undefined'){
+        document.documentElement.classList.remove('gsap-ready');
+      }
+    }
+    window.addEventListener('load', failsafe);
+    setTimeout(failsafe, 3000);
+  })();
+</script>
+</head>
+<body>
+
+<div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+<!-- ===== HEADER ===== -->
+<header class="site-header" id="header">
+  <div class="wrap nav" id="nav">
+    <a class="brand" href="#top" aria-label="Beeautify, página inicial">
+      <svg class="bee" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+        <g stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <ellipse cx="32" cy="40" rx="11" ry="15"/>
+          <path d="M32 28v27M24 33h16M23 41h18M25 49h14"/>
+          <circle cx="32" cy="22" r="5"/>
+          <path d="M29 18l-3-4M35 18l3-4"/>
+          <path d="M30 32C18 20 8 24 10 32c2 7 14 9 21 4" fill="rgba(198,138,58,.12)"/>
+          <path d="M34 32C46 20 56 24 54 32c-2 7-14 9-21 4" fill="rgba(198,138,58,.12)"/>
+        </g>
+      </svg>
+      <span class="brand-text">
+        <span class="brand-name">Beeautify</span>
+        <span class="brand-sub">Clínica</span>
+      </span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="#tecnologia">Tecnologia</a></li>
+      <li><a href="#servicos">Tratamentos</a></li>
+      <li><a href="#resultados">Resultados</a></li>
+      <li><a href="#sobre">Por que nós</a></li>
+      <li><a href="#faq">Dúvidas</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="#agendar" class="btn btn--primary">Agendar avaliação</a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Abrir menu" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main id="top">
+
+  <!-- ===== HERO ===== -->
+  <section class="hero">
+    <div class="hero-glow" aria-hidden="true"></div>
+    <svg class="hero-honeycomb" viewBox="0 0 400 360" fill="none" aria-hidden="true">
+      <defs>
+        <pattern id="hcHero" width="60" height="52" patternUnits="userSpaceOnUse" patternTransform="scale(1.4)">
+          <path d="M15 0l15 8.66v17.32L15 34.64 0 25.98V8.66z M45 0l15 8.66v17.32L45 34.64 30 25.98V8.66z" stroke="currentColor" stroke-width="1" fill="none"/>
+        </pattern>
+      </defs>
+      <rect width="400" height="360" fill="url(#hcHero)"/>
+    </svg>
+
+    <div class="wrap hero-grid">
+      <div class="hero-copy reveal">
+        <span class="eyebrow">Clínica Beeautify · São Caetano do Sul</span>
+        <h1>Sua beleza no auge — com a naturalidade que você <span class="script">merece.</span></h1>
+        <p class="lead">Estética facial, corporal e odontológica com tecnologias de ponta e protocolos exclusivos, desenhados sob medida para realçar o melhor de você. Sem exageros. Sem padrão. Só você, na sua melhor versão.</p>
+        <div class="hero-actions">
+          <a href="#agendar" class="btn btn--primary">
+            Agendar minha avaliação
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+          </a>
+          <a href="#servicos" class="btn btn--ghost">Ver tratamentos</a>
+        </div>
+        <div class="trust">
+          <span><strong>+5.000</strong> pessoas já confiam na Beeautify</span>
+          <i class="dot"></i><span>Resultados naturais</span>
+          <i class="dot"></i><span>Tecnologia de ponta</span>
+        </div>
+      </div>
+
+      <div class="hero-visual reveal">
+        <div class="hero-card">
+          <svg class="bee-big" viewBox="0 0 64 64" fill="none" aria-hidden="true">
+            <g stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round">
+              <ellipse cx="32" cy="40" rx="11" ry="15"/>
+              <path d="M32 28v27M24 33h16M23 41h18M25 49h14"/>
+              <circle cx="32" cy="22" r="5"/>
+              <path d="M29 18l-3-4M35 18l3-4"/>
+              <path d="M30 32C18 20 8 24 10 32c2 7 14 9 21 4"/>
+              <path d="M34 32C46 20 56 24 54 32c-2 7-14 9-21 4"/>
+            </g>
+          </svg>
+          <div class="hero-card-sheen" aria-hidden="true"></div>
+          <div class="hero-card-label">
+            <small>O projeto é você</small>
+            <p class="ph">Análise digital, plano sob medida<br>e resultado que parece só você.</p>
+          </div>
+        </div>
+        <div class="badge-float">
+          <svg class="hx" viewBox="0 0 40 40" fill="none" aria-hidden="true"><path d="M20 2l15.6 9v18L20 38 4.4 29V11z" stroke="currentColor" stroke-width="2"/><path d="M20 13v8l7 4" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <div><b>117</b><span>protocolos realizados</span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONNECT / BLOCK 1 ===== -->
+  <section class="section connect">
+    <div class="wrap reveal">
+      <span class="eyebrow eyebrow--center">Por que escolher a Beeautify</span>
+      <h2>Você não quer parecer "feita". Você quer parecer <em>você</em> — descansada, confiante, no seu melhor.</h2>
+      <p>Na Beeautify, acreditamos que estética de verdade não chama atenção pelo procedimento, e sim pelo resultado. Por isso, cada protocolo começa com escuta, análise individual e um plano feito exclusivamente para o seu rosto, seu corpo e seus objetivos.</p>
+      <p class="pullquote">Aqui, ninguém é mais um. Aqui, você é o projeto.</p>
+    </div>
+  </section>
+
+  <!-- ===== AUTHORITY / BLOCK 2 ===== -->
+  <section class="section authority" id="tecnologia">
+    <div class="deco" aria-hidden="true"></div>
+    <svg class="hc" viewBox="0 0 400 360" fill="none" aria-hidden="true"><rect width="400" height="360" fill="url(#hcHero)"/></svg>
+    <div class="wrap">
+      <div class="reveal">
+        <span class="eyebrow">Autoridade & Tecnologia</span>
+        <h2>Tecnologia de ponta a serviço da sua naturalidade.</h2>
+        <p class="intro">Investimos nos equipamentos e protocolos mais avançados do mercado para entregar resultados seguros, precisos e duradouros — com a análise digital que mostra exatamente o que o seu rosto precisa, antes de qualquer decisão.</p>
+      </div>
+      <div class="feat-grid">
+        <div class="feat reveal">
+          <div class="hex-ico">
+            <svg class="hexbg" viewBox="0 0 60 60" fill="none" aria-hidden="true"><path d="M30 3l23.4 13.5v27L30 57 6.6 43.5v-27z" stroke="currentColor" stroke-width="1.4" opacity=".55"/></svg>
+            <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="11" cy="11" r="7"/><path d="M21 21l-4.3-4.3M11 8v6M8 11h6"/></svg>
+          </div>
+          <h3>Diagnóstico inteligente</h3>
+          <p>Leitura digital da pele e da face para um plano preciso — decisões baseadas no que o seu rosto realmente pede.</p>
+        </div>
+        <div class="feat reveal">
+          <div class="hex-ico">
+            <svg class="hexbg" viewBox="0 0 60 60" fill="none" aria-hidden="true"><path d="M30 3l23.4 13.5v27L30 57 6.6 43.5v-27z" stroke="currentColor" stroke-width="1.4" opacity=".55"/></svg>
+            <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v3M12 18v3M3 12h3M18 12h3M5.6 5.6l2.1 2.1M16.3 16.3l2.1 2.1M5.6 18.4l2.1-2.1M16.3 7.7l2.1-2.1"/><circle cx="12" cy="12" r="3.2"/></svg>
+          </div>
+          <h3>Protocolos exclusivos</h3>
+          <p>Combinações pensadas para resultado natural e duradouro, ajustadas à sua pele e ao seu ritmo de vida.</p>
+        </div>
+        <div class="feat reveal">
+          <div class="hex-ico">
+            <svg class="hexbg" viewBox="0 0 60 60" fill="none" aria-hidden="true"><path d="M30 3l23.4 13.5v27L30 57 6.6 43.5v-27z" stroke="currentColor" stroke-width="1.4" opacity=".55"/></svg>
+            <svg class="ic" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-4.4-7-10a4 4 0 017-2.6A4 4 0 0119 11c0 5.6-7 10-7 10z"/></svg>
+          </div>
+          <h3>Ambiente premium</h3>
+          <p>Acolhimento, discrição e conforto em cada detalhe — uma experiência pensada para você se sentir cuidada.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== SERVICES / BLOCK 3 ===== -->
+  <section class="section services" id="servicos">
+    <div class="wrap">
+      <div class="head reveal">
+        <div>
+          <span class="eyebrow">Tratamentos</span>
+          <h2 style="margin-top:1.2rem">Organizados pelo que você deseja sentir.</h2>
+        </div>
+        <p>Cada frente de cuidado começa pelo seu objetivo — não pela técnica. Você escolhe o resultado; nós desenhamos o caminho.</p>
+      </div>
+
+      <div class="svc-grid">
+        <article class="svc reveal">
+          <span class="num">i</span>
+          <svg class="hxmark" viewBox="0 0 30 30" fill="none" aria-hidden="true"><path d="M15 2l11.3 6.5v13L15 28 3.7 21.5v-13z" stroke="currentColor" stroke-width="1.5"/><circle cx="15" cy="15" r="3" fill="currentColor"/></svg>
+          <h3>Realce facial</h3>
+          <p>Harmonização facial, toxina botulínica, preenchimento labial e bioestimuladores — para suavizar o tempo e devolver a frescura ao olhar.</p>
+          <div class="tags"><span>Harmonização</span><span>Toxina botulínica</span><span>Lips</span><span>Bioestimuladores</span></div>
+        </article>
+
+        <article class="svc reveal">
+          <span class="num">ii</span>
+          <svg class="hxmark" viewBox="0 0 30 30" fill="none" aria-hidden="true"><path d="M15 2l11.3 6.5v13L15 28 3.7 21.5v-13z" stroke="currentColor" stroke-width="1.5"/><circle cx="15" cy="15" r="3" fill="currentColor"/></svg>
+          <h3>Pele perfeita</h3>
+          <p>Lavieen e protocolos avançados para olheiras, melasma e textura — a pele de vidro que parece maquiagem, mas é só você.</p>
+          <div class="tags"><span>Lavieen</span><span>Olheiras</span><span>Melasma</span><span>Glass skin</span></div>
+        </article>
+
+        <article class="svc reveal">
+          <span class="num">iii</span>
+          <svg class="hxmark" viewBox="0 0 30 30" fill="none" aria-hidden="true"><path d="M15 2l11.3 6.5v13L15 28 3.7 21.5v-13z" stroke="currentColor" stroke-width="1.5"/><circle cx="15" cy="15" r="3" fill="currentColor"/></svg>
+          <h3>Corpo & definição</h3>
+          <p>HIPRO, tecnologias corporais e depilação a laser — firmeza, contorno e liberdade, no seu tempo e do seu jeito.</p>
+          <div class="tags"><span>HIPRO lifting</span><span>Corporal</span><span>Depilação a laser</span></div>
+        </article>
+
+        <article class="svc reveal">
+          <span class="num">iv</span>
+          <svg class="hxmark" viewBox="0 0 30 30" fill="none" aria-hidden="true"><path d="M15 2l11.3 6.5v13L15 28 3.7 21.5v-13z" stroke="currentColor" stroke-width="1.5"/><circle cx="15" cy="15" r="3" fill="currentColor"/></svg>
+          <h3>Sorriso de impacto</h3>
+          <p>Facetas e odontologia estética — porque o sorriso é o seu cartão de visitas, e merece o mesmo cuidado do resto.</p>
+          <div class="tags"><span>Facetas</span><span>Odontologia estética</span></div>
+        </article>
+      </div>
+
+      <div class="svc-cta reveal">
+        <a href="#agendar" class="btn btn--gold">Quero saber qual protocolo é ideal para mim</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROOF / BLOCK 4 ===== -->
+  <section class="section proof" id="resultados">
+    <div class="wrap">
+      <div class="head reveal">
+        <span class="eyebrow eyebrow--center">Resultados reais</span>
+        <h2>Resultados que falam por si.</h2>
+        <p>Antes e depois reais, de pessoas reais, que escolheram cuidar de si com quem entende do assunto.</p>
+      </div>
+
+      <div class="ba-grid">
+        <figure class="ba reveal">
+          <div class="ba-imgs"><div class="b"><span>Antes</span></div><div class="a"><span>Depois</span></div></div>
+          <figcaption class="ba-cap"><svg class="hx" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 1l7.8 4.5v9L10 19l-7.8-4.5v-9z" stroke="currentColor" stroke-width="1.4"/></svg> Harmonização facial · resultado natural</figcaption>
+        </figure>
+        <figure class="ba reveal">
+          <div class="ba-imgs"><div class="b"><span>Antes</span></div><div class="a"><span>Depois</span></div></div>
+          <figcaption class="ba-cap"><svg class="hx" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 1l7.8 4.5v9L10 19l-7.8-4.5v-9z" stroke="currentColor" stroke-width="1.4"/></svg> Lavieen · olheiras e melasma</figcaption>
+        </figure>
+        <figure class="ba reveal">
+          <div class="ba-imgs"><div class="b"><span>Antes</span></div><div class="a"><span>Depois</span></div></div>
+          <figcaption class="ba-cap"><svg class="hx" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M10 1l7.8 4.5v9L10 19l-7.8-4.5v-9z" stroke="currentColor" stroke-width="1.4"/></svg> Depilação a laser · pele lisa</figcaption>
+        </figure>
+      </div>
+
+      <figure class="testi reveal">
+        <svg class="hc" viewBox="0 0 400 360" fill="none" aria-hidden="true"><rect width="400" height="360" fill="url(#hcHero)"/></svg>
+        <span class="qmark" aria-hidden="true">&ldquo;</span>
+        <blockquote>Saí me sentindo eu mesma — só que ainda melhor.</blockquote>
+        <cite>Depoimento de cliente · destaque "Feedbacks"</cite>
+      </figure>
+    </div>
+  </section>
+
+  <!-- ===== WHY / BLOCK 5 ===== -->
+  <section class="section why" id="sobre">
+    <div class="wrap why-grid">
+      <div class="reveal">
+        <span class="eyebrow">A diferença Beeautify</span>
+        <h2>Tratamos beleza como consultoria, não como balcão.</h2>
+        <p>Cada avaliação é honesta: indicamos o que faz sentido para você — e dizemos não ao que não faz. Essa é a base da confiança de mais de 5 mil pessoas que já passaram por aqui.</p>
+        <div class="sig">
+          <svg class="bee" viewBox="0 0 64 64" fill="none" aria-hidden="true"><g stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="32" cy="40" rx="11" ry="15"/><path d="M32 28v27M24 33h16M23 41h18"/><circle cx="32" cy="22" r="5"/><path d="M30 32C18 20 8 24 10 32c2 7 14 9 21 4"/><path d="M34 32C46 20 56 24 54 32c-2 7-14 9-21 4"/></g></svg>
+          Cuidado artesanal.
+        </div>
+      </div>
+
+      <div class="why-card reveal">
+        <ul class="why-list">
+          <li>
+            <svg class="hx" viewBox="0 0 40 40" fill="none" aria-hidden="true"><path d="M20 2l15.6 9v18L20 38 4.4 29V11z" stroke="currentColor" stroke-width="1.6"/><path d="M14 20l4 4 8-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <div><b>Avaliação consultiva</b><p>Escuta e análise antes de qualquer indicação. Nada de pacote pronto.</p></div>
+          </li>
+          <li>
+            <svg class="hx" viewBox="0 0 40 40" fill="none" aria-hidden="true"><path d="M20 2l15.6 9v18L20 38 4.4 29V11z" stroke="currentColor" stroke-width="1.6"/><path d="M14 20l4 4 8-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <div><b>Resultado natural</b><p>O foco é realçar você — não transformar você em outra pessoa.</p></div>
+          </li>
+          <li>
+            <svg class="hx" viewBox="0 0 40 40" fill="none" aria-hidden="true"><path d="M20 2l15.6 9v18L20 38 4.4 29V11z" stroke="currentColor" stroke-width="1.6"/><path d="M14 20l4 4 8-8" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            <div><b>Experiência premium</b><p>Ambiente acolhedor, discrição e atendimento que respeita o seu tempo.</p></div>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FAQ ===== -->
+  <section class="section faq" id="faq">
+    <div class="wrap">
+      <div class="head reveal">
+        <span class="eyebrow eyebrow--center">Dúvidas frequentes</span>
+        <h2>Tudo o que você precisa saber.</h2>
+        <p>E se ficar qualquer dúvida, é só chamar no WhatsApp — a gente adora conversar.</p>
+      </div>
+
+      <div class="faq-list">
+        <details class="faq-item reveal">
+          <summary>Como funciona a primeira avaliação?<span class="pm" aria-hidden="true"></span></summary>
+          <div class="faq-body">A avaliação é consultiva: começamos ouvindo seus objetivos, fazemos a análise digital da sua pele e face e, só então, desenhamos um plano sob medida. Você sai entendendo exatamente o que faz sentido para você — sem pacote pronto.</div>
+        </details>
+        <details class="faq-item reveal">
+          <summary>Os resultados ficam naturais mesmo?<span class="pm" aria-hidden="true"></span></summary>
+          <div class="faq-body">Esse é o nosso compromisso. Trabalhamos para realçar a sua beleza, nunca para transformar você em outra pessoa. O resultado deve parecer descanso e frescor — não "procedimento".</div>
+        </details>
+        <details class="faq-item reveal">
+          <summary>Quais tratamentos vocês oferecem?<span class="pm" aria-hidden="true"></span></summary>
+          <div class="faq-body">Estética facial (harmonização, toxina botulínica, preenchimento, bioestimuladores), cuidados de pele (Lavieen, olheiras, melasma), tratamentos corporais e depilação a laser, além de odontologia estética com facetas.</div>
+        </details>
+        <details class="faq-item reveal">
+          <summary>É seguro? Quem realiza os procedimentos?<span class="pm" aria-hidden="true"></span></summary>
+          <div class="faq-body">Sim. Utilizamos equipamentos e protocolos dos mais avançados do mercado, sempre conduzidos por profissionais qualificados, com foco em segurança, precisão e resultados duradouros.</div>
+        </details>
+        <details class="faq-item reveal">
+          <summary>Onde fica a clínica e como agendo?<span class="pm" aria-hidden="true"></span></summary>
+          <div class="faq-body">Estamos em São Caetano do Sul · SP. Para agendar a sua avaliação, basta tocar em um dos botões de WhatsApp desta página — respondemos rapidinho.</div>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== FINAL CTA ===== -->
+  <section class="section final" id="agendar">
+    <div class="glow" aria-hidden="true"></div>
+    <svg class="hc" viewBox="0 0 760 360" fill="none" aria-hidden="true"><rect width="760" height="360" fill="url(#hcHero)"/></svg>
+    <div class="wrap reveal">
+      <img class="final-logo" src="logo.png" alt="Beeautify Clínica" width="320" height="280" />
+      <h2>Está na hora de investir em <span class="script">você.</span></h2>
+      <p>Agende sua avaliação na Beeautify e descubra, com um plano feito só para você, o quanto a sua melhor versão está mais perto do que imagina.</p>
+      <div class="final-actions">
+        <a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20na%20Beeautify." target="_blank" rel="noopener" class="btn btn--gold">Agendar meu momento Beeautify</a>
+        <a href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Gostaria%20de%20tirar%20uma%20d%C3%BAvida%20com%20a%20Beeautify." target="_blank" rel="noopener" class="btn btn--ghost-light">
+          <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 004.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0012.04 2zm0 18.12c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 01-1.26-4.36c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 012.41 5.82c0 4.54-3.7 8.23-8.25 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.11-.22-.17-.47-.29z"/></svg>
+          Falar agora no WhatsApp
+        </a>
+      </div>
+      <div class="final-meta">
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 6-9 12-9 12s-9-6-9-12a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg> São Caetano do Sul · SP</span>
+        <span><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="18" rx="2"/><path d="M16 2v4M8 2v4M3 10h18"/></svg> Agende seu horário</span>
+      </div>
+    </div>
+  </section>
+</main>
+
+<!-- ===== FOOTER ===== -->
+<footer class="site-footer">
+  <div class="wrap">
+    <div class="foot-top">
+      <div class="foot-brand">
+        <img class="foot-logo" src="logo.png" alt="Beeautify Clínica" width="230" height="200" />
+        <p>Clínica de estética avançada em São Caetano do Sul. Cuidado artesanal, resultado natural, experiência premium.</p>
+      </div>
+      <div class="foot-cols">
+        <div class="foot-col">
+          <h4>Tratamentos</h4>
+          <a href="#servicos">Realce facial</a>
+          <a href="#servicos">Pele perfeita</a>
+          <a href="#servicos">Corpo & definição</a>
+          <a href="#servicos">Sorriso de impacto</a>
+        </div>
+        <div class="foot-col">
+          <h4>Clínica</h4>
+          <a href="#tecnologia">Tecnologia</a>
+          <a href="#resultados">Resultados</a>
+          <a href="#sobre">Por que a Beeautify</a>
+          <a href="#agendar">Agendar avaliação</a>
+        </div>
+        <div class="foot-col">
+          <h4>Contato</h4>
+          <p>São Caetano do Sul · SP</p>
+          <a href="https://wa.me/5511999999999" target="_blank" rel="noopener">WhatsApp</a>
+          <a href="https://instagram.com/beeautify" target="_blank" rel="noopener">@beeautify</a>
+        </div>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© 2026 Beeautify Clínica. Todos os direitos reservados.</span>
+      <span>🐝 Sua melhor versão começa aqui.</span>
+    </div>
+  </div>
+</footer>
+
+<!-- ===== Floating WhatsApp ===== -->
+<a class="wa-float" id="waFloat" href="https://wa.me/5511999999999?text=Ol%C3%A1!%20Gostaria%20de%20agendar%20uma%20avalia%C3%A7%C3%A3o%20na%20Beeautify." target="_blank" rel="noopener" aria-label="Falar no WhatsApp">
+  <svg viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12.04 2C6.58 2 2.13 6.45 2.13 11.91c0 1.75.46 3.45 1.32 4.95L2 22l5.25-1.38a9.9 9.9 0 004.79 1.22h.01c5.46 0 9.91-4.45 9.91-9.91 0-2.65-1.03-5.14-2.9-7.01A9.82 9.82 0 0012.04 2zm0 18.12c-1.48 0-2.93-.4-4.2-1.15l-.3-.18-3.12.82.83-3.04-.2-.31a8.2 8.2 0 01-1.26-4.36c0-4.54 3.7-8.23 8.25-8.23 2.2 0 4.27.86 5.82 2.42a8.18 8.18 0 012.41 5.82c0 4.54-3.7 8.23-8.25 8.23zm4.52-6.16c-.25-.12-1.47-.72-1.69-.81-.23-.08-.39-.12-.56.13-.16.25-.64.81-.79.97-.14.17-.29.19-.54.06-.25-.12-1.05-.39-1.99-1.23-.74-.66-1.23-1.47-1.38-1.72-.14-.25-.01-.38.11-.51.11-.11.25-.29.37-.43.13-.15.17-.25.25-.41.08-.17.04-.31-.02-.43-.06-.12-.56-1.34-.76-1.84-.2-.48-.41-.42-.56-.43h-.48c-.17 0-.43.06-.66.31-.22.25-.86.85-.86 2.07 0 1.22.89 2.4 1.01 2.56.12.17 1.75 2.67 4.23 3.74.59.26 1.05.41 1.41.52.59.19 1.13.16 1.56.1.48-.07 1.47-.6 1.68-1.18.21-.58.21-1.07.14-1.18-.06-.11-.22-.17-.47-.29z"/></svg>
+  <span class="wa-label">Fale conosco</span>
+</a>
+
+<!-- ===== Motion libs: GSAP + ScrollTrigger + Lenis (sem framework / sem build) ===== -->
+<script src="https://cdn.jsdelivr.net/npm/lenis@1/dist/lenis.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+<script>
+  /* ---------------- UI sempre ativa: header + menu mobile ---------------- */
+  const header = document.getElementById('header');
+  const progress = document.getElementById('scrollProgress');
+  const waFloat = document.getElementById('waFloat');
+  const onScroll = () => {
+    const y = window.scrollY;
+    header.classList.toggle('scrolled', y > 40);
+    if (waFloat) waFloat.classList.toggle('show', y > 600);
+    if (progress) {
+      const max = document.documentElement.scrollHeight - window.innerHeight;
+      progress.style.transform = 'scaleX(' + (max > 0 ? Math.min(y / max, 1) : 0) + ')';
+    }
+  };
+  onScroll();
+  window.addEventListener('scroll', onScroll, {passive:true});
+  window.addEventListener('resize', onScroll, {passive:true});
+
+  const nav = document.getElementById('nav');
+  const toggle = document.getElementById('menuToggle');
+  toggle.addEventListener('click', () => {
+    const open = nav.classList.toggle('mobile-open');
+    toggle.setAttribute('aria-expanded', open);
+  });
+  nav.querySelectorAll('.nav-links a').forEach(a =>
+    a.addEventListener('click', () => nav.classList.remove('mobile-open'))
+  );
+
+  /* ---------------- Camada de animação ----------------
+     Roda só quando há GSAP carregado e o usuário não pediu movimento reduzido.
+     Em qualquer outro caso o conteúdo simplesmente aparece (sem animação). */
+  (function(){
+    const root = document.documentElement;
+    if (!root.classList.contains('gsap-ready') || typeof window.gsap === 'undefined') {
+      root.classList.remove('gsap-ready'); // garante conteúdo visível
+      return;
+    }
+
+    gsap.registerPlugin(ScrollTrigger);
+
+    /* ---- Lenis: smooth scroll integrado ao ScrollTrigger ---- */
+    let lenis = null;
+    if (typeof window.Lenis !== 'undefined') {
+      lenis = new Lenis({ lerp: 0.1, smoothWheel: true, wheelMultiplier: 1 });
+      lenis.on('scroll', ScrollTrigger.update);
+      gsap.ticker.add((time) => lenis.raf(time * 1000));
+      gsap.ticker.lagSmoothing(0);
+
+      // âncoras (#) passam pelo Lenis, com folga para o header fixo
+      document.querySelectorAll('a[href^="#"]').forEach((a) => {
+        a.addEventListener('click', (e) => {
+          const id = a.getAttribute('href');
+          if (!id || id === '#') return;
+          const target = document.querySelector(id);
+          if (!target) return;
+          e.preventDefault();
+          nav.classList.remove('mobile-open');
+          lenis.scrollTo(target, { offset: -80, duration: 1.2 });
+        });
+      });
+    }
+
+    const mm = gsap.matchMedia();
+
+    /* ---- HERO: sequência de entrada orquestrada ---- */
+    gsap.set('.hero-copy, .hero-visual', { opacity: 1 }); // libera os containers
+
+    gsap.timeline({ defaults: { ease: 'power3.out' }, delay: 0.15 })
+      .from('.hero-copy .eyebrow', { y: 18, opacity: 0, duration: 0.7 })
+      .from('.hero h1',            { y: 30, opacity: 0, duration: 0.9 }, '-=0.45')
+      .from('.hero .lead',         { y: 22, opacity: 0, duration: 0.8 }, '-=0.55')
+      .from('.hero-actions .btn',  { y: 18, opacity: 0, duration: 0.6, stagger: 0.12 }, '-=0.5')
+      .from('.trust > *',          { y: 12, opacity: 0, duration: 0.5, stagger: 0.08 }, '-=0.4')
+      .from('.hero-card',          { y: 40, opacity: 0, scale: 0.96, duration: 1, ease: 'power2.out' }, 0.25)
+      .from('.badge-float',        { x: -20, opacity: 0, scale: 0.85, duration: 0.7, ease: 'back.out(1.7)' }, '-=0.35');
+
+    /* ---- Reveals no scroll (substitui o IntersectionObserver) ---- */
+    const revealItems = gsap.utils.toArray('.reveal').filter(
+      (el) => !el.classList.contains('hero-copy') && !el.classList.contains('hero-visual')
+    );
+    ScrollTrigger.batch(revealItems, {
+      start: 'top 86%',
+      onEnter: (batch) => gsap.fromTo(batch,
+        { y: 30, opacity: 0 },
+        { y: 0, opacity: 1, duration: 0.8, ease: 'power3.out', stagger: 0.12, overwrite: true }
+      )
+    });
+
+    /* ---- Parallax suave: brilho + favo do hero ---- */
+    gsap.to('.hero-honeycomb', {
+      yPercent: 18, ease: 'none',
+      scrollTrigger: { trigger: '.hero', start: 'top top', end: 'bottom top', scrub: true }
+    });
+    gsap.to('.hero-glow', {
+      yPercent: 12, ease: 'none',
+      scrollTrigger: { trigger: '.hero', start: 'top top', end: 'bottom top', scrub: true }
+    });
+
+    /* ---- Ícones que se "desenham" ao entrar na tela ---- */
+    function drawIn(selector, opts) {
+      opts = opts || {};
+      gsap.utils.toArray(selector).forEach((path) => {
+        if (!path.getTotalLength) return;
+        const len = path.getTotalLength();
+        if (!len) return;
+        gsap.set(path, { strokeDasharray: len, strokeDashoffset: len });
+        gsap.to(path, {
+          strokeDashoffset: 0,
+          duration: opts.duration || 1.1,
+          ease: opts.ease || 'power2.out',
+          scrollTrigger: { trigger: path.closest('article, li, .feat, .badge-float, section') || path, start: opts.start || 'top 82%' }
+        });
+      });
+    }
+    drawIn('.hex-ico .hexbg path', { duration: 1.1 }); // hexágonos dos diferenciais
+    drawIn('.svc .hxmark path',    { duration: 1.0 }); // selo hexagonal dos tratamentos
+    drawIn('.why-list .hx path',   { duration: 0.9 }); // hexágono + "check" da lista
+
+    /* ---- Ícones internos dos diferenciais: loops com personalidade ---- */
+    const featIcons = gsap.utils.toArray('.feat .hex-ico .ic');
+    if (featIcons[0]) // lupa: pulso de "escaneamento"
+      gsap.to(featIcons[0], { scale: 1.12, transformOrigin: 'center', duration: 1.1, ease: 'sine.inOut', repeat: -1, yoyo: true });
+    if (featIcons[1]) // engrenagem/sol: giro lento
+      gsap.to(featIcons[1], { rotation: 360, transformOrigin: 'center', duration: 14, ease: 'none', repeat: -1 });
+    if (featIcons[2]) // coração: batida dupla
+      gsap.timeline({ repeat: -1, repeatDelay: 1.1 })
+        .to(featIcons[2], { scale: 1.18, transformOrigin: 'center', duration: 0.16, ease: 'power1.out' })
+        .to(featIcons[2], { scale: 1, duration: 0.24, ease: 'power1.in' })
+        .to(featIcons[2], { scale: 1.12, duration: 0.14, ease: 'power1.out' })
+        .to(featIcons[2], { scale: 1, duration: 0.30, ease: 'power1.in' });
+
+    // ícone "salta" quando o card entra
+    gsap.utils.toArray('.feat').forEach((feat) => {
+      const ic = feat.querySelector('.ic');
+      if (!ic) return;
+      gsap.from(ic, { scale: 0.4, opacity: 0, transformOrigin: 'center', duration: 0.6, ease: 'back.out(2)',
+        scrollTrigger: { trigger: feat, start: 'top 80%' } });
+    });
+
+    /* ---- Abelhas: asas batendo + flutuar ---- */
+    gsap.to('.bee-big g path:nth-of-type(3)', { rotation: -10, svgOrigin: '30 30', duration: 0.12, ease: 'sine.inOut', repeat: -1, yoyo: true });
+    gsap.to('.bee-big g path:nth-of-type(4)', { rotation:  10, svgOrigin: '34 30', duration: 0.12, ease: 'sine.inOut', repeat: -1, yoyo: true });
+    gsap.to('.bee-big', { y: -10, duration: 2.4, ease: 'sine.inOut', repeat: -1, yoyo: true });
+
+    gsap.to('.final .bee g path:nth-of-type(3)', { rotation: -9, svgOrigin: '30 30', duration: 0.14, ease: 'sine.inOut', repeat: -1, yoyo: true });
+    gsap.to('.final .bee g path:nth-of-type(4)', { rotation:  9, svgOrigin: '34 30', duration: 0.14, ease: 'sine.inOut', repeat: -1, yoyo: true });
+
+    /* ---- Brilho deslizando no card do hero ---- */
+    gsap.fromTo('.hero-card-sheen', { xPercent: -160 }, { xPercent: 160, duration: 2.6, ease: 'power1.inOut', repeat: -1, repeatDelay: 2.4 });
+
+    /* ---- Selo flutuante (idle) ---- */
+    gsap.to('.badge-float', { y: '+=7', duration: 2.2, ease: 'sine.inOut', repeat: -1, yoyo: true, delay: 1.6 });
+
+    /* ---- Favos das seções escuras: respiração sutil ---- */
+    gsap.utils.toArray('.authority .hc, .final .hc, .testi .hc').forEach((hc) => {
+      gsap.to(hc, { y: '+=16', duration: 7, ease: 'sine.inOut', repeat: -1, yoyo: true });
+      gsap.to(hc, { opacity: '+=0.05', duration: 4, ease: 'sine.inOut', repeat: -1, yoyo: true });
+    });
+
+    /* ---- Aspas do depoimento ---- */
+    gsap.from('.testi .qmark', { scale: 0, opacity: 0, transformOrigin: 'left top', duration: 0.7, ease: 'back.out(2)',
+      scrollTrigger: { trigger: '.testi', start: 'top 75%' } });
+
+    /* ---- Contadores numéricos ---- */
+    function countUp(el, end, prefix) {
+      const obj = { v: 0 };
+      ScrollTrigger.create({
+        trigger: el, start: 'top 92%', once: true,
+        onEnter: () => gsap.to(obj, {
+          v: end, duration: 1.6, ease: 'power2.out',
+          onUpdate: () => { el.textContent = prefix + Math.round(obj.v).toLocaleString('pt-BR'); }
+        })
+      });
+    }
+    const trustNum = document.querySelector('.trust strong');
+    if (trustNum) countUp(trustNum, 5000, '+');
+    const badgeNum = document.querySelector('.badge-float b');
+    if (badgeNum) countUp(badgeNum, 117, '');
+
+    /* ---- Botões magnéticos (apenas mouse/desktop) ---- */
+    mm.add('(hover: hover) and (pointer: fine)', () => {
+      gsap.utils.toArray('.btn--primary, .btn--gold').forEach((btn) => {
+        const xTo = gsap.quickTo(btn, 'x', { duration: 0.4, ease: 'power3' });
+        const yTo = gsap.quickTo(btn, 'y', { duration: 0.4, ease: 'power3' });
+        btn.addEventListener('mousemove', (e) => {
+          const r = btn.getBoundingClientRect();
+          xTo((e.clientX - r.left - r.width / 2) * 0.3);
+          yTo((e.clientY - r.top - r.height / 2) * 0.4 - 3); // leve elevação
+        });
+        btn.addEventListener('mouseleave', () => { xTo(0); yTo(0); });
+      });
+    });
+
+    ScrollTrigger.refresh();
+  })();
+</script>
+</body>
+</html>
